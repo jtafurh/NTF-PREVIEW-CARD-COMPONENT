@@ -1,0 +1,27 @@
+.card{
+    width: 350px;
+    height: 596px;
+    margin-top: 152px;
+}
+.card_image-container{
+    width: 302px;
+    height: 302px;
+}
+.card_content-title{
+    margin-top: 24px;
+}
+.card_content-description{
+    margin-top: 17px;
+}
+.card_content-status{
+    margin-top: 26px;
+}
+.card_line{
+    margin-top: 23px;
+    margin-bottom: 16px;  
+}
+.card_avatar-image{
+    width: 33px;
+    height: 33px;
+    border-radius: 16.5px;
+}

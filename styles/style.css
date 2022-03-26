@@ -1,0 +1,155 @@
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    /* (main BG) */
+    --Very-dark-blue-main: hsl(217, 54%, 11%);
+    /* (card BG) */
+    --Very-dark-blue-card: hsl(216, 50%, 16%);
+    /* (line) */
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Outfit', sans-serif;
+    font-size: 62.5%;
+}
+body{
+    width: 100%;
+    min-width: 375px;
+    background-color: var(--Very-dark-blue-main);
+}
+.card{
+    width: 327px;
+    height: 543px;
+    margin: 0 auto;
+    margin-top: 62px;
+    padding: 24px;
+    background-color: var(--Very-dark-blue-card);
+    border-radius: 15px;
+}
+.card_image-container{
+    position: relative;
+    width: 278px;
+    height: 278px;
+    border-radius: 8px;
+    overflow: hidden; /*hace que las imágenes contenidas respeten el borde del conteneror padre */
+    cursor: pointer; /*cambia el cursor a una manita*/
+    object-fit: cover; /*mantiene la proporción de las imágenes*/
+}
+.card_image{
+    width: 100%;
+    height: 100%;
+}
+.card_view{
+    background: rgba(45, 219, 219, 0.6);
+    /*Le indicamos al contenedor que se posicione sobre toda la imagen*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /*Con flexbox colocamos el icono en el centro del contenedor*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*opacity 0 hará que todas las propiedades aplicadas se encuentren ocultas*/
+    opacity: 0;
+}
+.card_view:hover{
+    /* Al hace hover, la propiedad opacity cambia a 1 lo que ara que todas las propiedades que estaban aplicadas pero ocultas sean ahora visibles */
+    opacity: 1;
+}
+.card_content-title{
+    margin-top: 22px;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    font-weight: 600;
+    color: var(--White);
+}
+.card_content-description{
+    margin-top: 12px;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+    color: var(--Soft-blue);
+    letter-spacing: -0.045em;
+}
+.card_content-status{
+    width: 100%;
+    height: 20px;
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+.card_status-valor{
+    display: flex;
+    align-items: center;
+}
+.card_status-valor-text{
+    font-size: 1.6rem;
+    margin-left: 6px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: var(--Cyan);
+}
+.card_status-days{
+    display: flex;
+    align-items: center;
+}
+.card_status-days-text{
+    font-size: 1.6rem;
+    margin-left: 6px;
+    font-weight: 400;
+    text-align: end;
+    letter-spacing: -0.02em;    
+    color: var(--Soft-blue);
+}
+.card_line{
+    width: 100%;
+    height: 1px;
+    margin-top: 14px;
+    margin-bottom: 17px;  
+    background-color: var(--Very-dark-blue-line);
+}
+.card_avatar{
+    display: flex;
+    align-items: center;
+}
+.card_avatar-image{
+    width: 31px;
+    height: 31px;
+    border: 1px solid #FFFFFF;
+    border-radius: 15.5px;
+}
+.card_avatar-text{
+    margin-left: 17px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: -0.03em;
+    color: var(--Soft-blue);
+}
+.card_avatar-text-bolt{
+    margin-left: 3px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    color: var(--White);
+    text-decoration: none;
+}
+.card_avatar-text-bolt:hover{
+    /* Al hacer hover la propiedad color cambia */
+    color: var(--Cyan);
+}
+.attribution{
+    margin-top: 20px;
+    font-size: 11px; 
+    text-align: center; 
+    color: var(--Soft-blue);}
+.attribution_link{
+    color: var(--Cyan)
+}
