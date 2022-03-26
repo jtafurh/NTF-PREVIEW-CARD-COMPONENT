@@ -20,7 +20,7 @@ html{
 }
 body{
     width: 100%;
-    min-width: 375px;
+    min-width: 327px;
     background-color: var(--Very-dark-blue-main);
 }
 .card{
