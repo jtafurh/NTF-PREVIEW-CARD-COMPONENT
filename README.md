@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [here](https://github.com/jtafurh/NTF-PREVIEW-CARD-COMPONENT-MAIN)
-- Live Site URL: [here](https://jtafurh.github.io/NTF-PREVIEW-CARD-COMPONENT-MAIN)
+- Solution URL: [here](https://github.com/jtafurh/NTF-PREVIEW-CARD-COMPONENT)
+- Live Site URL: [here](https://jtafurh.github.io/NTF-PREVIEW-CARD-COMPONENT/)
 
 ## My process
 
